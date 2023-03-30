@@ -17,16 +17,7 @@ return {
     },
   },
   -- Set colorscheme to use
-  colorscheme = "astrodark",
-  text_icons = {
-    [[                    NeoVim                       ]],
-    [[            ~ btw,I use Arch ~ __                ]],
-    [[  ___     ___    ___   __  __ /\_\    ___ ___    ]],
-    [[ / _ `\  / __`\ / __`\/\ \/\ \\/\ \  / __` __`\  ]],
-    [[/\ \/\ \/\  __//\ \_\ \ \ \_/ |\ \ \/\ \/\ \/\ \ ]],
-    [[\ \_\ \_\ \____\ \____/\ \___/  \ \_\ \_\ \_\ \_\]],
-    [[ \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
-  },
+  colorscheme = "catppuccin", --"astrodark",
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
