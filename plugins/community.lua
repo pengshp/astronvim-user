@@ -12,6 +12,7 @@ return {
     "catppuccin",
     opts = {
       flavour = "mocha",
+      term_colors = true,
       transparent_background = true,
       integrations = {
         sandwich = false,
@@ -25,6 +26,17 @@ return {
         lsp_trouble = true,
         ts_rainbow2 = true,
       },
+      styles = {
+        comments = { "italic" },
+        functions = { "italic" },
+        types = { "bold" },
+        conditions = {},
+        keywords = {},
+        strings = {},
+        numbers = {},
+        booleans = {},
+        properties = {},
+      }
     },
   },
 }

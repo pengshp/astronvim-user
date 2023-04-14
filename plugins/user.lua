@@ -10,23 +10,21 @@ return {
     --   end,
     -- },
     {
-        "black-desk/fcitx5-ui.nvim",
+        "pysan3/fcitx5.nvim",
+        event = "ModeChanged",
+        cond = vim.fn.executable("fcitx5-remote") == 1,
         config = function()
-            local consts = require("fcitx5-ui.consts")
-            require('fcitx5-ui').setup({
-                keys = {
-                    trigger = { '<C-Space>', consts.FcitxKey.space, consts.FcitxKeyState.ctrl },
-                    up = { '<Up>', consts.FcitxKey.up, consts.FcitxKeyState.no },
-                    down = { '<Down>', consts.FcitxKey.down, consts.FcitxKeyState.no },
-                    left = { '<Left>', consts.FcitxKey.left, consts.FcitxKeyState.no },
-                    right = { '<Right>', consts.FcitxKey.right, consts.FcitxKeyState.no },
-                    enter = { '<CR>', consts.FcitxKey.enter, consts.FcitxKeyState.no },
-                    backspace = { '<BS>', consts.FcitxKey.backspace, consts.FcitxKeyState.no },
-                    tab = { '<Tab>', consts.FcitxKey.tab, consts.FcitxKeyState.no },
-                    stab = { '<S-Tab>', consts.FcitxKey.tab, consts.FcitxKeyState.shift },
-                }
+            require("fcitx5").setup({
+                imname = {
+                    norm = "keyboard-us",
+                    ins = "pinyin",
+                    cmd = "keyboard-us",
+                    vis = "keyboard-us",
+                    term = "keyboard-us",
+                },
+                remember_prior = true,
+                define_autocmd = true,
             })
         end,
-        rocks = { 'lgi', 'dbus_proxy' },
     },
 }
