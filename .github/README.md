@@ -26,7 +26,7 @@ You can also just clone this repository directly if you do not want to track you
 #### Clone the repository
 
 ```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim/lua/user
+git clone https://github.com/pengshp/astronvim-user ~/.config/nvim/lua/user
 ```
 
 #### Start Neovim
@@ -34,3 +34,13 @@ git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim/lua/us
 ```shell
 nvim
 ```
+
+My user configuration of AstroNvim.
+
+## Feature
+- [x] add catppuccin theme.
+- [x] add fcitx5 support. via [fcitx5.nvim](https://github.com/pysan3/fcitx5.nvim)
+- [x] add some default LSP and treesiter.
+
+
+
