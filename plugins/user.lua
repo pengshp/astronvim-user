@@ -17,13 +17,13 @@ return {
             require("fcitx5").setup({
                 imname = {
                     norm = "keyboard-us",
-                    ins = "pinyin",
-                    cmd = "keyboard-us",
-                    vis = "keyboard-us",
+                    ins = "keyboard-us", --pinyin
+                    -- cmd = "keyboard-us",
+                    -- vis = "keyboard-us",
                     term = "keyboard-us",
                 },
                 remember_prior = true,
-                define_autocmd = true,
+                define_autocmd = false,
             })
         end,
     },
